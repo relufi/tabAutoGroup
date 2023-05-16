@@ -404,6 +404,9 @@
    "pT3Scope": {
       "message": "Also apply rules to already grouped tabs"
    },
+   "pT3AutoCollapse": {
+      "message": "Whether to automatically collapse an unselected tab group"
+   },
    "pT3Tip": {
       "message": "Rules take effect only when the page changes.\u003Cbr>Rules are automatically synchronized when you turn on the browser sync settings."
    },

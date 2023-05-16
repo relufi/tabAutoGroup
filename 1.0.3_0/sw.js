@@ -1,5 +1,10 @@
 const RulePrefix = "rule-";
-var Rules, RuleForNoGroup, OneGroupInAll, GroupByDomain, MaxSnapshots;
+var Rules,
+  RuleForNoGroup,
+  OneGroupInAll,
+  AutoCollapse,
+  GroupByDomain,
+  MaxSnapshots;
 function prepareForUse(a) {
   let b = [];
   for (const [c, d] of Object.entries(a))
@@ -10,6 +15,7 @@ function prepareForUse(a) {
   Rules = b;
   RuleForNoGroup = "all" !== a["r-scope"];
   OneGroupInAll = a["r-oneGroupInAll"] ?? !1;
+  AutoCollapse = a["r-autoCollapse"] ?? !1;
   GroupByDomain = a["r-groupByDomain"] ?? !1;
   MaxSnapshots = a["max-snapshots"] ?? 5;
 }
@@ -77,10 +83,13 @@ function domainToName(hostname) {
 }
 function matchDomainRule(a) {
   a = new URL(a);
-  if(RuleForNoGroup) {
-      if((a.protocol === 'edge:' || a.protocol === 'chrome:') && a.hostname === 'newtab') {
-        return null;
-      }
+  if (RuleForNoGroup) {
+    if (
+      (a.protocol === "edge:" || a.protocol === "chrome:") &&
+      a.hostname === "newtab"
+    ) {
+      return null;
+    }
   }
   return { groupName: domainToName(a.hostname) };
 }
@@ -89,10 +98,48 @@ const NoGroup = chrome.tabGroups.TAB_GROUP_ID_NONE,
 function onTabCreated(a) {
   a.url && autoGroup(a.url, null, a);
 }
-function onTabUpdated(a, b, c) {
-    if(b.status === 'complete' && !c.pinned && (c.url || c.title)) {
-        autoGroup(c.url, c.title, c)
+function onTabUpdated(a,b,c) {
+  onAsyncTabUpdated(a,b,c);
+}
+async function onAsyncTabUpdated(a, b, c) {
+  if (b.status === "complete") {
+    if (!c.pinned && (c.url || c.title)) {
+      await autoGroup(c.url, c.title, c);
     }
+    if (c.active) {
+      await autoCollapse({tabId: c.id,windowId: c.windowId});
+    }
+  }
+}
+async function autoCollapse(activeInfo) {
+  await InitPromise;
+  if (AutoCollapse) {
+    let tab = await chrome.tabs.get(activeInfo.tabId);
+    if (tab) {
+      let tabGroupInfos = await chrome.tabGroups.query({ windowId: activeInfo.windowId });
+      for (let tabGroupInfo of tabGroupInfos) {
+        const nextCollapsed = tabGroupInfo.id !== tab.groupId;
+        if (nextCollapsed !== tabGroupInfo.collapsed) {
+          await updateTableGroup(tabGroupInfo.id, { collapsed: nextCollapsed });
+        }
+      }
+    }
+  }
+}
+async function updateTableGroup(id, props) {
+  try {
+    await chrome.tabGroups.update(id, props);
+  } catch (error) {
+    if (
+      error ==
+      "Error: Tabs cannot be edited right now (user may be dragging a tab)."
+    ) {
+      setTimeout(() => updateTableGroup(id, props), 50);
+    }
+  }
+}
+function onActivated(activeInfo) {
+  autoCollapse(activeInfo);
 }
 var groupTimeoutIds = new Map();
 function checkGroupUnique(a) {
@@ -125,11 +172,11 @@ async function autoGroup(a, title, c) {
   if (RuleForNoGroup && c.groupId !== NoGroup) {
     return;
   }
-  if(a) {
+  if (a) {
     d = matchUrlRule(a);
     if (GroupByDomain && !d) {
-        d = matchDomainRule(a);
-    }    
+      d = matchDomainRule(a);
+    }
   }
   if (title && !d) {
     d = matchTitleRule(title);
@@ -139,29 +186,30 @@ async function autoGroup(a, title, c) {
     const e = d.groupName;
     a = { title: e };
     OneGroupInAll || (a.windowId = CurrentWindow);
-    chrome.tabGroups.query(a, function (f) {
-      if (0 < f.length) {
-        if (c.groupId !== NoGroup)
-          for (let h of f) if (c.groupId === h.id) return;
-        const g = c.windowId === f[0].windowId;
-        chrome.tabs.group({ tabIds: c.id, groupId: f[0].id }, function () {
-          !g &&
-            c.active &&
-            OneGroupInAll &&
-            (chrome.tabs.update(c.id, { active: !0 }),
-            chrome.windows.update(f[0].windowId, { focused: !0 }));
-        });
-      } else
-        chrome.tabs.group({ tabIds: c.id }, function (g) {
-          let h = { title: e };
-          d.groupColor && (h.color = d.groupColor);
-          chrome.tabGroups.update(g, h, (k) => {
-            chrome.runtime.lastError &&
-              console.log(chrome.runtime.lastError.message);
-            checkGroupUnique(e);
-          });
-        });
-    });
+    let f = await chrome.tabGroups.query(a);
+    if (0 < f.length) {
+      if (c.groupId !== NoGroup) {
+        for (let h of f) {
+          if (c.groupId === h.id) {
+            return;
+          }
+        }
+      }
+      const g = c.windowId === f[0].windowId;
+      await chrome.tabs.group({ tabIds: c.id, groupId: f[0].id });
+      !g &&
+        c.active &&
+        OneGroupInAll &&
+        (chrome.tabs.update(c.id, { active: !0 }),
+        chrome.windows.update(f[0].windowId, { focused: !0 }));
+    } else {
+      let g = await chrome.tabs.group({ tabIds: c.id });
+      let h = { title: e };
+      d.groupColor && (h.color = d.groupColor);
+      let k = await chrome.tabGroups.update(g, h);
+      chrome.runtime.lastError && console.log(chrome.runtime.lastError.message);
+      checkGroupUnique(e);
+    }
   }
 }
 class GroupStore {
@@ -934,6 +982,7 @@ function onInstall(a) {
 chrome.runtime.onInstalled.addListener(onInstall);
 chrome.tabs.onCreated.addListener(onTabCreated);
 chrome.tabs.onUpdated.addListener(onTabUpdated);
+chrome.tabs.onActivated.addListener(onActivated);
 chrome.commands.onCommand.addListener(onCommand);
 chrome.runtime.onMessage.addListener(onMessage);
 chrome.storage.sync.onChanged.addListener(updateRules);

@@ -925,6 +925,11 @@ class RuleList {
     b = document.getElementById("rule-oneGroupInAll");
     b.addEventListener("click", RuleList.updateOneInAll);
     b.checked = a["r-oneGroupInAll"];
+    
+    b = document.getElementById("rule-autoCollapse");
+    b.addEventListener("click", RuleList.updateAutoCollapse);
+    b.checked = a["r-autoCollapse"];
+
     b = document.getElementById("rule-groupByDomain");
     b.addEventListener("click", RuleList.updateGroupByDomain);
     b.checked = a["r-groupByDomain"];
@@ -961,6 +966,9 @@ class RuleList {
   }
   static updateOneInAll(a) {
     RuleStore.updateOneInAll(this.checked);
+  }
+  static updateAutoCollapse(a) {
+    RuleStore.updateAutoCollapse(this.checked);
   }
   static updateGroupByDomain(a) {
     RuleStore.updateGroupByDomain(this.checked);
