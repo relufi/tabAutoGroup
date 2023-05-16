@@ -1,0 +1,173 @@
+{
+   "action": {
+      "default_popup": "popup.html"
+   },
+   "author": "Guokai Han",
+   "background": {
+      "service_worker": "sw.js"
+   },
+   "commands": {
+      "_execute_action": {
+      },
+      "active-group-1": {
+         "description": "__MSG_cmd_active_group_1__"
+      },
+      "active-group-2": {
+         "description": "__MSG_cmd_active_group_2__"
+      },
+      "active-group-3": {
+         "description": "__MSG_cmd_active_group_3__"
+      },
+      "active-group-4": {
+         "description": "__MSG_cmd_active_group_4__"
+      },
+      "active-group-5": {
+         "description": "__MSG_cmd_active_group_5__"
+      },
+      "active-group-6": {
+         "description": "__MSG_cmd_active_group_6__"
+      },
+      "active-group-7": {
+         "description": "__MSG_cmd_active_group_7__"
+      },
+      "active-group-8": {
+         "description": "__MSG_cmd_active_group_8__"
+      },
+      "active-group-9": {
+         "description": "__MSG_cmd_active_group_9__"
+      },
+      "add-left-tab-in-this-group": {
+         "description": "__MSG_cmd_add_left_tab_in_this_group__"
+      },
+      "add-right-tab-in-this-group": {
+         "description": "__MSG_cmd_add_right_tab_in_this_group__"
+      },
+      "collapse-group-1": {
+         "description": "__MSG_cmd_collapse_group_1__"
+      },
+      "collapse-group-2": {
+         "description": "__MSG_cmd_collapse_group_2__"
+      },
+      "collapse-group-3": {
+         "description": "__MSG_cmd_collapse_group_3__"
+      },
+      "collapse-group-4": {
+         "description": "__MSG_cmd_collapse_group_4__"
+      },
+      "collapse-group-5": {
+         "description": "__MSG_cmd_collapse_group_5__"
+      },
+      "collapse-group-6": {
+         "description": "__MSG_cmd_collapse_group_6__"
+      },
+      "collapse-group-7": {
+         "description": "__MSG_cmd_collapse_group_7__"
+      },
+      "collapse-group-8": {
+         "description": "__MSG_cmd_collapse_group_8__"
+      },
+      "collapse-group-9": {
+         "description": "__MSG_cmd_collapse_group_9__"
+      },
+      "duplicate-tab": {
+         "description": "__MSG_cmd_duplicate_tab__"
+      },
+      "group-by-domain-with-name": {
+         "description": "__MSG_cmd_group_by_domain_with_name__"
+      },
+      "group-by-domain-without-name": {
+         "description": "__MSG_cmd_group_by_domain_without_name__"
+      },
+      "group-ungrouped-tabs": {
+         "description": "__MSG_cmd_group_ungrouped_tabs__"
+      },
+      "move-group-left": {
+         "description": "__MSG_cmd_move_group_left__"
+      },
+      "move-group-right": {
+         "description": "__MSG_cmd_move_group_right__"
+      },
+      "move-group-window": {
+         "description": "__MSG_cmd_move_group_window__"
+      },
+      "move-tab-left": {
+         "description": "__MSG_cmd_move_tab_left__"
+      },
+      "move-tab-right": {
+         "description": "__MSG_cmd_move_tab_right__"
+      },
+      "newtab-in-group": {
+         "description": "__MSG_cmd_newtab_in_group__"
+      },
+      "next-tab-in-group": {
+         "description": "__MSG_cmd_next_tab_in_group__"
+      },
+      "previous-tab-in-group": {
+         "description": "__MSG_cmd_previous_tab_in_group__"
+      },
+      "remove-group": {
+         "description": "__MSG_cmd_remove_group__",
+         "suggested_key": {
+            "default": "Alt+Shift+C"
+         }
+      },
+      "remove-left-tabs": {
+         "description": "__MSG_cmd_remove_left_tabs__"
+      },
+      "remove-other-tabs": {
+         "description": "__MSG_cmd_remove_other_tabs__"
+      },
+      "remove-right-tabs": {
+         "description": "__MSG_cmd_remove_right_tabs__"
+      },
+      "remove-tabs-not-in-this-group": {
+         "description": "__MSG_cmd_remove_tabs_not_in_this_group__"
+      },
+      "remove-ungrouped-tabs": {
+         "description": "__MSG_cmd_remove_ungrouped_tabs__"
+      },
+      "save-group": {
+         "description": "__MSG_cmd_save_group__"
+      },
+      "save-tab": {
+         "description": "__MSG_cmd_save_tab__"
+      },
+      "toggle-all-group-collapse": {
+         "description": "__MSG_cmd_toggle_all_group_collapse__"
+      },
+      "toggle-group-collapse": {
+         "description": "__MSG_cmd_toggle_group_collapse__"
+      },
+      "toggle-tab-group": {
+         "description": "__MSG_cmd_toggle_tab_group__",
+         "suggested_key": {
+            "default": "Alt+Shift+G"
+         }
+      },
+      "toggle-tab-pin": {
+         "description": "__MSG_cmd_toggle_tab_pin__"
+      },
+      "ungroup-all-group": {
+         "description": "__MSG_cmd_ungroup_all_group__"
+      },
+      "ungroup-this-group": {
+         "description": "__MSG_cmd_ungroup_this_group__"
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_extDescription__",
+   "icons": {
+      "128": "icon/128.png",
+      "16": "icon/16.png",
+      "48": "icon/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqnPBEXRUOsNnHmd2X6jxlb7iSgmP2rASWM8/Rvy3SniOhnh48+p2O/DlYJZyLpIcqdzjR5LfNOmmcQbgc2x0zxY2A0XkK/IGCW6sA5qdM3UmWN/riHMeB0juyL2FEGY01dKD9k+fpqgB1Oj531PjZ0hOKlAAzediyDhHwmXUmHT/6+gTGm7UHQ8vCpzhL/mf75VpFsnUgunz04eAubqWuDqorqrI517eVHUOoP+6N4rDinlQNvvii/Lx05fnWy/BOtINJqtCtYsf34h1+leR3h09lv04737ZR45bxJIrXH4l9uQvJt4fft028td7XXvmcksEmr5yvUDw7bU5YoCJawIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "104",
+   "name": "__MSG_extName__",
+   "offline_enabled": true,
+   "optional_permissions": [ "notifications" ],
+   "permissions": [ "favicon", "storage", "unlimitedStorage", "tabs", "tabGroups", "alarms" ],
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "1.0.3"
+}

@@ -1,0 +1,72 @@
+html {
+  font-size: 16px;
+}
+.pointer {
+  cursor: pointer;
+}
+.size-18 {
+  width: 18px;
+  height: 18px;
+}
+.h-38 {
+  height: 38px;
+}
+.container {
+  max-width: 960px;
+}
+.rule {
+  margin-bottom: 32px;
+}
+.rule.disabled > table,
+.rule.disabled > legend {
+  color: rgba(0,0,0,.5)!important;
+}
+.help img {
+  width: 18px;
+  height: 18px;
+  vertical-align: text-top;
+  margin-right: 1px;
+}
+table {
+  table-layout: fixed;
+}
+th:nth-child(1) {
+  width: 6%;
+}
+td:nth-child(2) {
+  width: 24%;
+}
+td:nth-child(3) {
+  width: 18%;
+}
+td:nth-child(4) {
+  width: 52%;
+  font-weight: bold;
+}
+
+/*equal buttons width*/
+fieldset button {
+  width: 4rem;
+}
+.modal-footer button {
+  width: 5rem;
+}
+
+/*reset fieldset and legend*/
+fieldset {
+  border-width: 2px;
+  border-style: groove;
+  margin-inline-end: 2px;
+  margin-inline-start: 2px;
+  padding-block-end: 12px;
+  padding-block-start: 4px;
+  padding-inline-end: 12px;
+  padding-inline-start: 12px;
+}
+legend {
+  float: none;
+  width: auto;
+  padding-inline-end: 6px;
+  padding-inline-start: 6px;
+  margin: 0;
+}

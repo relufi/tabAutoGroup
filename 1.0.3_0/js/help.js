@@ -1,0 +1,1 @@
+function initMsg(){let b=document.querySelectorAll("[data-i18n]");for(const a of b)a.textContent=chrome.i18n.getMessage(a.dataset.i18n)}function initImg(){const b="zh-CN"==navigator.language?"/zh_CN/":"/en/";let a=document.querySelectorAll("img[data-src]");for(const c of a)c.src=c.dataset.src.replace("/lang/",b)}initMsg();initImg();

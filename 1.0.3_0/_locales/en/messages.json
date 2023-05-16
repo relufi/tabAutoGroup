@@ -1,0 +1,626 @@
+{
+   "NoName": {
+      "message": "No name"
+   },
+   "Saved": {
+      "message": "Saved"
+   },
+   "cmd_active_group_1": {
+      "message": "Active the 1st group"
+   },
+   "cmd_active_group_2": {
+      "message": "Active the 2nd group"
+   },
+   "cmd_active_group_3": {
+      "message": "Active the 3rd group"
+   },
+   "cmd_active_group_4": {
+      "message": "Active the 4th group"
+   },
+   "cmd_active_group_5": {
+      "message": "Active the 5th group"
+   },
+   "cmd_active_group_6": {
+      "message": "Active the 6th group"
+   },
+   "cmd_active_group_7": {
+      "message": "Active the 7th group"
+   },
+   "cmd_active_group_8": {
+      "message": "Active the 8th group"
+   },
+   "cmd_active_group_9": {
+      "message": "Active the last group"
+   },
+   "cmd_add_left_tab_in_this_group": {
+      "message": "Add left ungrouped tab to current group"
+   },
+   "cmd_add_right_tab_in_this_group": {
+      "message": "Add right ungrouped tab to current group"
+   },
+   "cmd_collapse_group_1": {
+      "message": "Collapse/expand the 1st group"
+   },
+   "cmd_collapse_group_2": {
+      "message": "Collapse/expand the 2nd group"
+   },
+   "cmd_collapse_group_3": {
+      "message": "Collapse/expand the 3rd group"
+   },
+   "cmd_collapse_group_4": {
+      "message": "Collapse/expand the 4th group"
+   },
+   "cmd_collapse_group_5": {
+      "message": "Collapse/expand the 5th group"
+   },
+   "cmd_collapse_group_6": {
+      "message": "Collapse/expand the 6th group"
+   },
+   "cmd_collapse_group_7": {
+      "message": "Collapse/expand the 7th group"
+   },
+   "cmd_collapse_group_8": {
+      "message": "Collapse/expand the 8th group"
+   },
+   "cmd_collapse_group_9": {
+      "message": "Collapse/expand the last group"
+   },
+   "cmd_duplicate_tab": {
+      "message": "Duplicate current tab"
+   },
+   "cmd_group_by_domain_with_name": {
+      "message": "Group all tabs by domain name - set group name and collapse"
+   },
+   "cmd_group_by_domain_without_name": {
+      "message": "Group all tabs by domain name - don't set group name and expand"
+   },
+   "cmd_group_ungrouped_tabs": {
+      "message": "Group all ungrouped tabs into a new group."
+   },
+   "cmd_move_group_left": {
+      "message": "Move current group/tab to the left (group awareness)"
+   },
+   "cmd_move_group_right": {
+      "message": "Move current group/tab to the right (group awareness)"
+   },
+   "cmd_move_group_window": {
+      "message": "Move current group to new window"
+   },
+   "cmd_move_tab_left": {
+      "message": "Move current tab to the left (group unawareness)"
+   },
+   "cmd_move_tab_right": {
+      "message": "Move current tab to the right (group unawareness)"
+   },
+   "cmd_newtab_in_group": {
+      "message": "New tab in current group"
+   },
+   "cmd_next_tab_in_group": {
+      "message": "Active next tab in current group"
+   },
+   "cmd_previous_tab_in_group": {
+      "message": "Active previous tab in current group"
+   },
+   "cmd_remove_group": {
+      "message": "Close current group (close all tabs in the group)"
+   },
+   "cmd_remove_left_tabs": {
+      "message": "Close tabs to the left"
+   },
+   "cmd_remove_other_tabs": {
+      "message": "Close other tabs"
+   },
+   "cmd_remove_right_tabs": {
+      "message": "Close tabs to the right"
+   },
+   "cmd_remove_tabs_not_in_this_group": {
+      "message": "Close all tabs not in current group"
+   },
+   "cmd_remove_ungrouped_tabs": {
+      "message": "Close all ungrouped tabs"
+   },
+   "cmd_save_group": {
+      "message": "Save current group. Please turn on notifications."
+   },
+   "cmd_save_tab": {
+      "message": "Save current tab. Please turn on notifications."
+   },
+   "cmd_toggle_all_group_collapse": {
+      "message": "Collapse/expand all groups"
+   },
+   "cmd_toggle_group_collapse": {
+      "message": "Collapse/expand current group"
+   },
+   "cmd_toggle_tab_group": {
+      "message": "Group/ungroup current/selected tab(s)"
+   },
+   "cmd_toggle_tab_pin": {
+      "message": "Pin/unpin current tab"
+   },
+   "cmd_ungroup_all_group": {
+      "message": "Ungroup all groups"
+   },
+   "cmd_ungroup_this_group": {
+      "message": "Ungroup current group"
+   },
+   "colorBlue": {
+      "message": "Blue"
+   },
+   "colorCyan": {
+      "message": "Cyan"
+   },
+   "colorDefault": {
+      "message": "Auto"
+   },
+   "colorGreen": {
+      "message": "Green"
+   },
+   "colorGrey": {
+      "message": "Grey"
+   },
+   "colorOrange": {
+      "message": "Orange"
+   },
+   "colorPink": {
+      "message": "Pink"
+   },
+   "colorPurple": {
+      "message": "Purple"
+   },
+   "colorRed": {
+      "message": "Red"
+   },
+   "colorYellow": {
+      "message": "Yellow"
+   },
+   "extDescription": {
+      "message": "Automatically group tabs, save tabs/groups, and provide shortcuts for tabs/groups."
+   },
+   "extName": {
+      "message": "Tab Groups Extension"
+   },
+   "hBasic": {
+      "message": "Tab Groups Creation and Basic Operations:"
+   },
+   "hBasic_1": {
+      "message": "Select one or more tabs with the mouse, then use the shortcut key (Alt+Shift+G by default) to create a group."
+   },
+   "hBasic_2": {
+      "message": "Select one or more tabs with the mouse, then right-click a tab to create a group or move to an existing group."
+   },
+   "hBasic_3": {
+      "message": "Set up grouping rules to automatically create groups for tabs."
+   },
+   "hBasic_4": {
+      "message": "Drag a tab left/right to move it into or out of groups."
+   },
+   "hBasic_5": {
+      "message": "Right-click the group label to modify the group name, color and other functions."
+   },
+   "hBasic_6": {
+      "message": "Click the group label to collapse or expand the group."
+   },
+   "hBasic_7": {
+      "message": "Drag the group label left/right to move the group as a whole."
+   },
+   "hBasic_8": {
+      "message": "Click this extension icon to manage and save tabs or groups in the popup page, as well as set grouping rules and keyboard shortcuts."
+   },
+   "hPin": {
+      "message": "Pin this extension. It will show on your address bar."
+   },
+   "hRule1": {
+      "message": "Setup your group rules."
+   },
+   "hRule2": {
+      "message": "Create matching rules for a group rule. It supports the following matching targets:"
+   },
+   "hRule2_1": {
+      "message": "Hostname is the domain part (excluding port number) of full URL, e.g. www.example.com"
+   },
+   "hRule2_2": {
+      "message": "Full URL, e.g. https://www.example.com/page.html?word=hello"
+   },
+   "hRule2_3": {
+      "message": "Page title is the title of the tab"
+   },
+   "hSave1": {
+      "message": "Open a saved tab or group."
+   },
+   "hSave3": {
+      "message": "Delete a saved tab or group."
+   },
+   "hSave6": {
+      "message": "All saved groups are collapsed by default."
+   },
+   "hSave7": {
+      "message": "Set max snapshots for a named group."
+   },
+   "hShortcut": {
+      "message": "Setup your custom keyboard shortcuts for functions you like."
+   },
+   "hTab1": {
+      "message": "Active a tab."
+   },
+   "hTab2": {
+      "message": "Collapse/expand a group."
+   },
+   "hTab3": {
+      "message": "Move group to new window."
+   },
+   "hTab4": {
+      "message": "Save a tab or group snapshot."
+   },
+   "hTab5": {
+      "message": "Close a tab or group."
+   },
+   "hTab6": {
+      "message": "Change the group color."
+   },
+   "hTab7": {
+      "message": "Change the group name."
+   },
+   "hTitle": {
+      "message": "User Guide"
+   },
+   "kb_c": {
+      "message": "Close a tab or group for opened tabs"
+   },
+   "kb_ctrl_enter": {
+      "message": "Open a tab without closing the popup"
+   },
+   "kb_ctrl_o": {
+      "message": "Open a tab or group without closing the popup"
+   },
+   "kb_enter": {
+      "message": "Activate or open a tab; Collapse or expand a group"
+   },
+   "kb_esc": {
+      "message": "Exit input focus; close context menu; close popup page"
+   },
+   "kb_hash": {
+      "message": "Delete a tab or group for saved tabs"
+   },
+   "kb_next_row": {
+      "message": "Jump to next tab or group"
+   },
+   "kb_next_tabpane": {
+      "message": "Go to next navigation pane"
+   },
+   "kb_next_top_row": {
+      "message": "Jump to next top-level tab or group"
+   },
+   "kb_o": {
+      "message": "Activate or open a tab; Open a group"
+   },
+   "kb_pre_row": {
+      "message": "Jump to previous tab or group"
+   },
+   "kb_pre_tabpane": {
+      "message": "Go to previous navigation pane"
+   },
+   "kb_pre_top_row": {
+      "message": "Jump to previous top-level tab or group"
+   },
+   "kb_r": {
+      "message": "Rename current group name"
+   },
+   "kb_s": {
+      "message": "Save a tab or group for opened tabs"
+   },
+   "kb_shift_enter": {
+      "message": "Open a tab in a new window"
+   },
+   "kb_shift_o": {
+      "message": "Open a tab or group in a new window"
+   },
+   "pAddBtn": {
+      "message": "Add"
+   },
+   "pAddHead": {
+      "message": "Select Tabs to Add"
+   },
+   "pMoveItem1": {
+      "message": "Move to"
+   },
+   "pMoveItem2": {
+      "message": "New Window"
+   },
+   "pMoveItem3": {
+      "message": "Or Other Windows"
+   },
+   "pT1Head": {
+      "message": "All Tabs and Groups in Current Window"
+   },
+   "pT2Data": {
+      "message": "Import/Export"
+   },
+   "pT2Data_ExportHTML": {
+      "message": "Export HTML File"
+   },
+   "pT2Data_ExportJSON": {
+      "message": "Export JSON File"
+   },
+   "pT2Data_ImportJSON": {
+      "message": "Import JSON File"
+   },
+   "pT2DeleteAll": {
+      "message": "Delete All Records?"
+   },
+   "pT2EditTitle": {
+      "message": "Name"
+   },
+   "pT2EditTitleInvalid": {
+      "message": "Please provide a name."
+   },
+   "pT2EditURL": {
+      "message": "URL"
+   },
+   "pT2EditURLInvalid": {
+      "message": "Please provide a URL."
+   },
+   "pT2Expand": {
+      "message": "Collapse all groups by default (to reduce space usage)"
+   },
+   "pT2GroupTitle": {
+      "message": "Open All Tabs in This Group"
+   },
+   "pT2Head": {
+      "message": "All Saved Tabs and Groups"
+   },
+   "pT2Max1": {
+      "message": "Save up to"
+   },
+   "pT2Max2": {
+      "message": "snapshots per named group"
+   },
+   "pT2MergeSuccess": {
+      "message": "Merged"
+   },
+   "pT2NoRecord": {
+      "message": "No saved tabs or groups."
+   },
+   "pT2Tip": {
+      "message": "Open without closing the popup: Ctrl + Click\u003Cbr>Open in a new window: Shift + Click\u003Cbr>Open all pages of a group: Click the group\u003Cbr>Merge groups with the same name: Click \u003Cimg src='img/call_merge_black.svg' class='size-16 align-text-bottom'> button"
+   },
+   "pT3Btn": {
+      "message": "Edit Rules"
+   },
+   "pT3Disabled": {
+      "message": "Disabled"
+   },
+   "pT3GroupByDomain": {
+      "message": "Automatically group by domain name (it will disable all other rules)"
+   },
+   "pT3Head": {
+      "message": "Current Group Rules"
+   },
+   "pT3NoRecord": {
+      "message": "No group rules."
+   },
+   "pT3OneInAll": {
+      "message": "Only allow one group with the same name in all windows"
+   },
+   "pT3Scope": {
+      "message": "Also apply rules to already grouped tabs"
+   },
+   "pT3Tip": {
+      "message": "Rules take effect only when the page changes.\u003Cbr>Rules are automatically synchronized when you turn on the browser sync settings."
+   },
+   "pT4Btn": {
+      "message": "Edit Shortcuts"
+   },
+   "pT4Caption1": {
+      "message": "Shortcuts Used in This Popup Page"
+   },
+   "pT4Caption2": {
+      "message": "Basic Operations"
+   },
+   "pT4Caption3": {
+      "message": "Group or Ungroup Operations"
+   },
+   "pT4Caption4": {
+      "message": "Close Operations"
+   },
+   "pT4Caption5": {
+      "message": "Move Operations"
+   },
+   "pT4Caption6": {
+      "message": "Active Operations"
+   },
+   "pT4Caption7": {
+      "message": "Collapse or Expand Operations"
+   },
+   "pT4CrKS": {
+      "message": "Browser built-in shortcuts"
+   },
+   "pT4Head1": {
+      "message": "Shortcut"
+   },
+   "pT4Head2": {
+      "message": "Action"
+   },
+   "pT4Head3": {
+      "message": "Edit"
+   },
+   "pT4NotifyPermission": {
+      "message": "Turn on notifications when using custom save-shortcuts"
+   },
+   "pT4Summary1": {
+      "message": "Popup Page Shortcuts"
+   },
+   "pT4Summary2": {
+      "message": "Browser Shortcuts (Set by You as Needed)"
+   },
+   "pTabLabel1": {
+      "message": "Current Tabs"
+   },
+   "pTabLabel2": {
+      "message": "Saved Groups"
+   },
+   "pTabLabel3": {
+      "message": "Group Rules"
+   },
+   "pTabLabel4": {
+      "message": "Shortcuts"
+   },
+   "rAddBtn": {
+      "message": "Add Rule"
+   },
+   "rCancelBtn": {
+      "message": "Cancel"
+   },
+   "rCloseBtn": {
+      "message": "Close"
+   },
+   "rDelBtn": {
+      "message": "Delete"
+   },
+   "rDelConfirm": {
+      "message": "Delete Rule $1 ?"
+   },
+   "rEditBtn": {
+      "message": "Edit"
+   },
+   "rEnableBtn": {
+      "message": "Enable"
+   },
+   "rHMethodL1": {
+      "message": "It includes: \"example\", \"www\", \"com\", \"www.example\", \"example.com\", \"www.example.com\""
+   },
+   "rHMethodL2": {
+      "message": "It begins with: \"www\", \"www.example\", \"www.example.com\""
+   },
+   "rHMethodL3": {
+      "message": "It ends with: \"com\", \"example.com\", \"www.example.com\""
+   },
+   "rHMethodL4": {
+      "message": "It equals: \"www.example.com\""
+   },
+   "rHMethodL5": {
+      "message": "For regular expression matching, please refer to \u003Ca href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions' target='_blank'>RegExp.test()\u003C/a>. Note that, unlike string literals in programming language source code, the input of regular expression here does not require escaping \"\\\" and quotation marks."
+   },
+   "rHMethodP1": {
+      "message": "Take \u003Ccode>www.example.com\u003C/code> as an example"
+   },
+   "rHMethodTitle": {
+      "message": "Matching Methods"
+   },
+   "rHNoteL1": {
+      "message": "Rules only perform a match when a tab changes, such as when a new tab is opened or when the URL or title of the page changes."
+   },
+   "rHNoteL2": {
+      "message": "By default, rules do not change tabs that are already in a group. But if current tab navigates to another site and you want to re-group it by rules, you can check \"The popup → Group Rules → Also apply rules to already grouped tabs\" option."
+   },
+   "rHNoteL3": {
+      "message": "Browser has a default behavior: new tabs that opened from a group automatically belong to this group. If the rule matches, and you want to override this default behavior, you can also check \"The popup → Group Rules → Also apply rules to already grouped tabs\" option."
+   },
+   "rHNoteL4": {
+      "message": "When you use multiple browser windows, if you want to have only one group with the same name in all windows (which may move the newly opened tab to an already existing group in another window), you can check \"The popup → Group Rules → Only allow one group with the same name in all windows\" option."
+   },
+   "rHNoteTitle": {
+      "message": "Notes"
+   },
+   "rHTargetL1": {
+      "message": "The full URL of the page, i.e. the entire content of the address bar, e.g.\u003Cbr>\u003Ccode>https://www.example.com/path/page.html?param=abc#section\u003C/code>"
+   },
+   "rHTargetL2": {
+      "message": "The hostname is the domain part of the full URL, such as \u003Ccode>www.example.com\u003C/code>, excluding the port number."
+   },
+   "rHTargetL3": {
+      "message": "Page title, which is the text displayed on the tab, such as \"Article Title - Website Name\"."
+   },
+   "rHTargetP1": {
+      "message": "Each tab in the browser displays a page. Rules can match the following information of pages:"
+   },
+   "rHTargetP2": {
+      "message": "For example, to automatically add all pages from the example.com website to a group, you only need to create a matching rule of \"Hostname includes example.com\"."
+   },
+   "rHTargetTitle": {
+      "message": "Matching Targets"
+   },
+   "rHTitle": {
+      "message": "The Interpretation of Rules"
+   },
+   "rHelpBtn": {
+      "message": "Help"
+   },
+   "rMGroupColor": {
+      "message": "Group Color"
+   },
+   "rMGroupColorInvalid": {
+      "message": "Wrong color"
+   },
+   "rMGroupName": {
+      "message": "Group Name"
+   },
+   "rMGroupNameInvalid": {
+      "message": "Please provide a name."
+   },
+   "rMGroupNamePH": {
+      "message": "A very short name"
+   },
+   "rMMatchTip": {
+      "message": "You can add multiple matching rules. If a tab matches, it will be automatically added to the group."
+   },
+   "rMMatchTitle": {
+      "message": "Matching Rules"
+   },
+   "rMRuleName": {
+      "message": "Rule Name"
+   },
+   "rMRuleNameInvalid": {
+      "message": "Please provide a name."
+   },
+   "rMRuleNamePH": {
+      "message": "Describe your rule"
+   },
+   "rMTitle": {
+      "message": "Edit Rule"
+   },
+   "rMethodEndsWith": {
+      "message": "ends with"
+   },
+   "rMethodEqual": {
+      "message": "equals"
+   },
+   "rMethodIncludes": {
+      "message": "includes"
+   },
+   "rMethodInvalid": {
+      "message": "Wrong value."
+   },
+   "rMethodRegex": {
+      "message": "regex"
+   },
+   "rMethodStartsWith": {
+      "message": "begins with"
+   },
+   "rSaveBtn": {
+      "message": "Save"
+   },
+   "rTargetHostname": {
+      "message": "Hostname"
+   },
+   "rTargetHref": {
+      "message": "Full URL"
+   },
+   "rTargetInvalid": {
+      "message": "Wrong value."
+   },
+   "rTargetTitle": {
+      "message": "Page title"
+   },
+   "rTargetTitleIgnoreCase": {
+      "message": "Page title (ignore case)"
+   },
+   "rTitle": {
+      "message": "Tab Grouping Rules"
+   },
+   "rValueEmptyInvalid": {
+      "message": "Please provide a value."
+   },
+   "rValueRegexInvalid": {
+      "message": "Invalid regular expression."
+   }
+}

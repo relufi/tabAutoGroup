@@ -1,0 +1,626 @@
+{
+   "NoName": {
+      "message": "未命名"
+   },
+   "Saved": {
+      "message": "已保存"
+   },
+   "cmd_active_group_1": {
+      "message": "激活第 1 个分组"
+   },
+   "cmd_active_group_2": {
+      "message": "激活第 2 个分组"
+   },
+   "cmd_active_group_3": {
+      "message": "激活第 3 个分组"
+   },
+   "cmd_active_group_4": {
+      "message": "激活第 4 个分组"
+   },
+   "cmd_active_group_5": {
+      "message": "激活第 5 个分组"
+   },
+   "cmd_active_group_6": {
+      "message": "激活第 6 个分组"
+   },
+   "cmd_active_group_7": {
+      "message": "激活第 7 个分组"
+   },
+   "cmd_active_group_8": {
+      "message": "激活第 8 个分组"
+   },
+   "cmd_active_group_9": {
+      "message": "激活最后一个分组"
+   },
+   "cmd_add_left_tab_in_this_group": {
+      "message": "将左侧(未分组的)标签添加到当前分组中"
+   },
+   "cmd_add_right_tab_in_this_group": {
+      "message": "将右侧(未分组的)标签添加到当前分组中"
+   },
+   "cmd_collapse_group_1": {
+      "message": "收缩/展开第 1 个分组"
+   },
+   "cmd_collapse_group_2": {
+      "message": "收缩/展开第 2 个分组"
+   },
+   "cmd_collapse_group_3": {
+      "message": "收缩/展开第 3 个分组"
+   },
+   "cmd_collapse_group_4": {
+      "message": "收缩/展开第 4 个分组"
+   },
+   "cmd_collapse_group_5": {
+      "message": "收缩/展开第 5 个分组"
+   },
+   "cmd_collapse_group_6": {
+      "message": "收缩/展开第 6 个分组"
+   },
+   "cmd_collapse_group_7": {
+      "message": "收缩/展开第 7 个分组"
+   },
+   "cmd_collapse_group_8": {
+      "message": "收缩/展开第 8 个分组"
+   },
+   "cmd_collapse_group_9": {
+      "message": "收缩/展开最后一个分组"
+   },
+   "cmd_duplicate_tab": {
+      "message": "复制当前标签"
+   },
+   "cmd_group_by_domain_with_name": {
+      "message": "按网站域名对所有标签自动分组 - 设置名称并处于收缩状态"
+   },
+   "cmd_group_by_domain_without_name": {
+      "message": "按网站域名对所有标签自动分组 - 不设置名称并处于展开状态"
+   },
+   "cmd_group_ungrouped_tabs": {
+      "message": "将所有未在分组中的标签添加到一个新的分组中。"
+   },
+   "cmd_move_group_left": {
+      "message": "将当前分组或标签向左移动(分组感知)"
+   },
+   "cmd_move_group_right": {
+      "message": "将当前分组或标签向右移动(分组感知)"
+   },
+   "cmd_move_group_window": {
+      "message": "将当前分组移至新窗口"
+   },
+   "cmd_move_tab_left": {
+      "message": "将当前标签向左移动(分组无感知)"
+   },
+   "cmd_move_tab_right": {
+      "message": "将当前标签向右移动(分组无感知)"
+   },
+   "cmd_newtab_in_group": {
+      "message": "在当前分组中新建标签页"
+   },
+   "cmd_next_tab_in_group": {
+      "message": "激活当前分组中的下一个标签"
+   },
+   "cmd_previous_tab_in_group": {
+      "message": "激活当前分组中的上一个标签"
+   },
+   "cmd_remove_group": {
+      "message": "关闭当前分组(即关闭分组中的所有标签)"
+   },
+   "cmd_remove_left_tabs": {
+      "message": "关闭左侧的所有标签"
+   },
+   "cmd_remove_other_tabs": {
+      "message": "关闭所有其它标签"
+   },
+   "cmd_remove_right_tabs": {
+      "message": "关闭右侧的所有标签"
+   },
+   "cmd_remove_tabs_not_in_this_group": {
+      "message": "关闭所有未在当前分组中的标签"
+   },
+   "cmd_remove_ungrouped_tabs": {
+      "message": "关闭所有未在任何分组中的标签"
+   },
+   "cmd_save_group": {
+      "message": "保存当前分组。请开启通知使用。"
+   },
+   "cmd_save_tab": {
+      "message": "保存当前标签。请开启通知使用。"
+   },
+   "cmd_toggle_all_group_collapse": {
+      "message": "收缩/展开全部分组"
+   },
+   "cmd_toggle_group_collapse": {
+      "message": "收缩/展开当前分组"
+   },
+   "cmd_toggle_tab_group": {
+      "message": "将当前标签或选中多个标签加入到新建分组中或从现有分组中移除"
+   },
+   "cmd_toggle_tab_pin": {
+      "message": "固定/取消固定当前标签"
+   },
+   "cmd_ungroup_all_group": {
+      "message": "取消所有分组"
+   },
+   "cmd_ungroup_this_group": {
+      "message": "取消当前分组"
+   },
+   "colorBlue": {
+      "message": "蓝色"
+   },
+   "colorCyan": {
+      "message": "蓝绿色"
+   },
+   "colorDefault": {
+      "message": "自动"
+   },
+   "colorGreen": {
+      "message": "绿色"
+   },
+   "colorGrey": {
+      "message": "灰色"
+   },
+   "colorOrange": {
+      "message": "橙色"
+   },
+   "colorPink": {
+      "message": "粉色"
+   },
+   "colorPurple": {
+      "message": "紫色"
+   },
+   "colorRed": {
+      "message": "红色"
+   },
+   "colorYellow": {
+      "message": "黄色"
+   },
+   "extDescription": {
+      "message": "自动为标签建立分组，保存标签和分组，并提供标签和分组的快捷键。"
+   },
+   "extName": {
+      "message": "标签分组扩展"
+   },
+   "hBasic": {
+      "message": "标签分组的创建和基本操作："
+   },
+   "hBasic_1": {
+      "message": "鼠标选中一个或多个标签，使用快捷键(默认 Alt+Shift+G)即可创建分组。"
+   },
+   "hBasic_2": {
+      "message": "鼠标选中一个或多个标签，右键点击标签，可以创建分组或移到现有分组。"
+   },
+   "hBasic_3": {
+      "message": "设置自定义分组规则，可以自动为标签创建分组。"
+   },
+   "hBasic_4": {
+      "message": "左右拖拽标签可以将标签移入或移出分组。"
+   },
+   "hBasic_5": {
+      "message": "右键点击分组标识，可以修改分组名称、颜色以及其它功能。"
+   },
+   "hBasic_6": {
+      "message": "单击分组标识，可以收缩或展开分组。"
+   },
+   "hBasic_7": {
+      "message": "左右拖拽分组标识，可以整体移动分组。"
+   },
+   "hBasic_8": {
+      "message": "点击此扩展图标，在弹出页中可以管理、保存标签和分组，以及设置分组规则和快捷键功能。"
+   },
+   "hPin": {
+      "message": "点击固定按钮，这样扩展图标将保留在地址栏上。"
+   },
+   "hRule1": {
+      "message": "定制你的自动分组规则。"
+   },
+   "hRule2": {
+      "message": "创建自动分组的匹配规则。规则支持如下匹配目标："
+   },
+   "hRule2_1": {
+      "message": "域名部分，如 www.example.com"
+   },
+   "hRule2_2": {
+      "message": "完整URL，如 https://www.example.com/page.html?word=hello"
+   },
+   "hRule2_3": {
+      "message": "页面标题，即标签的标题"
+   },
+   "hSave1": {
+      "message": "打开之前保存的标签或分组。"
+   },
+   "hSave3": {
+      "message": "删除保存的标签或分组。"
+   },
+   "hSave6": {
+      "message": "默认收缩显示已保存的分组"
+   },
+   "hSave7": {
+      "message": "设置命名分组最多保存的快照数量。"
+   },
+   "hShortcut": {
+      "message": "定制你需要的功能的快捷键。"
+   },
+   "hTab1": {
+      "message": "激活标签。"
+   },
+   "hTab2": {
+      "message": "收缩/展开分组。"
+   },
+   "hTab3": {
+      "message": "将分组移至新窗口。"
+   },
+   "hTab4": {
+      "message": "保存标签或分组的当前快照。"
+   },
+   "hTab5": {
+      "message": "关闭标签或分组。"
+   },
+   "hTab6": {
+      "message": "修改分组颜色。"
+   },
+   "hTab7": {
+      "message": "修改分组名称。"
+   },
+   "hTitle": {
+      "message": "用户指南"
+   },
+   "kb_c": {
+      "message": "关闭一个已打开的标签或分组"
+   },
+   "kb_ctrl_enter": {
+      "message": "在后台打开一个标签(不关闭此弹出页)"
+   },
+   "kb_ctrl_o": {
+      "message": "在后台打开一个标签或分组(不关闭此弹出页)"
+   },
+   "kb_enter": {
+      "message": "激活或打开一个标签；收缩或展开一个分组"
+   },
+   "kb_esc": {
+      "message": "退出输入焦点；关闭上下文菜单；关闭弹出页"
+   },
+   "kb_hash": {
+      "message": "删除一个已保存的标签或分组"
+   },
+   "kb_next_row": {
+      "message": "跳到下一个标签或分组"
+   },
+   "kb_next_tabpane": {
+      "message": "显示下一个面板"
+   },
+   "kb_next_top_row": {
+      "message": "跳到下一个顶级标签或分组(忽略分组中的标签)"
+   },
+   "kb_o": {
+      "message": "激活或打开一个标签；打开一个分组"
+   },
+   "kb_pre_row": {
+      "message": "跳到上一个标签或分组"
+   },
+   "kb_pre_tabpane": {
+      "message": "显示上一个面板"
+   },
+   "kb_pre_top_row": {
+      "message": "跳到上一个顶级标签或分组(忽略分组中的标签)"
+   },
+   "kb_r": {
+      "message": "修改分组名称"
+   },
+   "kb_s": {
+      "message": "保存一个已打开的标签或分组"
+   },
+   "kb_shift_enter": {
+      "message": "在新窗口中打开一个标签"
+   },
+   "kb_shift_o": {
+      "message": "在新窗口中打开一个标签或分组"
+   },
+   "pAddBtn": {
+      "message": "添加"
+   },
+   "pAddHead": {
+      "message": "选择要添加的标签"
+   },
+   "pMoveItem1": {
+      "message": "移动到"
+   },
+   "pMoveItem2": {
+      "message": "新窗口"
+   },
+   "pMoveItem3": {
+      "message": "或其它窗口"
+   },
+   "pT1Head": {
+      "message": "当前窗口中的所有标签和分组"
+   },
+   "pT2Data": {
+      "message": "导入导出"
+   },
+   "pT2Data_ExportHTML": {
+      "message": "导出 HTML 文件"
+   },
+   "pT2Data_ExportJSON": {
+      "message": "导出 JSON 文件"
+   },
+   "pT2Data_ImportJSON": {
+      "message": "导入 JSON 文件"
+   },
+   "pT2DeleteAll": {
+      "message": "删除所有记录？"
+   },
+   "pT2EditTitle": {
+      "message": "名称"
+   },
+   "pT2EditTitleInvalid": {
+      "message": "请提供一个名字"
+   },
+   "pT2EditURL": {
+      "message": "网址"
+   },
+   "pT2EditURLInvalid": {
+      "message": "请提供一个网址"
+   },
+   "pT2Expand": {
+      "message": "默认收缩所有分组(以减少空间占用)"
+   },
+   "pT2GroupTitle": {
+      "message": "打开分组中的所有标签"
+   },
+   "pT2Head": {
+      "message": "已保存的所有标签和分组快照"
+   },
+   "pT2Max1": {
+      "message": "每个命名分组最多保存"
+   },
+   "pT2Max2": {
+      "message": "个快照"
+   },
+   "pT2MergeSuccess": {
+      "message": "已合并"
+   },
+   "pT2NoRecord": {
+      "message": "无保存记录"
+   },
+   "pT2Tip": {
+      "message": "在后台打开(不关闭此弹出页)：按住 Ctrl 键的同时点击\u003Cbr>在新窗口中打开：按住 Shift 键的同时点击\u003Cbr>点击分组即可打开分组的所有页面\u003Cbr>合并相同名称的分组：点击\u003Cimg src='img/call_merge_black.svg' class='size-16 align-text-bottom'>按钮"
+   },
+   "pT3Btn": {
+      "message": "自定义规则"
+   },
+   "pT3Disabled": {
+      "message": "已禁用"
+   },
+   "pT3GroupByDomain": {
+      "message": "自动按域名分组(这会禁用所有其它规则)"
+   },
+   "pT3Head": {
+      "message": "当前自动分组规则"
+   },
+   "pT3NoRecord": {
+      "message": "无分组规则"
+   },
+   "pT3OneInAll": {
+      "message": "同名的分组在所有窗口中只允许有一个"
+   },
+   "pT3Scope": {
+      "message": "对已处于分组中的标签也应用规则"
+   },
+   "pT3Tip": {
+      "message": "规则仅在页面变化时生效。\u003Cbr>如果开启了浏览器同步设置，规则会自动同步。"
+   },
+   "pT4Btn": {
+      "message": "自定义快捷键"
+   },
+   "pT4Caption1": {
+      "message": "在弹出页中使用的快捷键"
+   },
+   "pT4Caption2": {
+      "message": "基本操作"
+   },
+   "pT4Caption3": {
+      "message": "分组操作"
+   },
+   "pT4Caption4": {
+      "message": "关闭操作"
+   },
+   "pT4Caption5": {
+      "message": "移动操作"
+   },
+   "pT4Caption6": {
+      "message": "激活操作"
+   },
+   "pT4Caption7": {
+      "message": "收缩/展开操作"
+   },
+   "pT4CrKS": {
+      "message": "浏览器内置快捷键"
+   },
+   "pT4Head1": {
+      "message": "快捷键"
+   },
+   "pT4Head2": {
+      "message": "作用"
+   },
+   "pT4Head3": {
+      "message": "编辑"
+   },
+   "pT4NotifyPermission": {
+      "message": "开启通知(在使用自定义保存快捷键时)"
+   },
+   "pT4Summary1": {
+      "message": "扩展弹出页快捷键"
+   },
+   "pT4Summary2": {
+      "message": "扩展浏览器快捷键(由您按需设置)"
+   },
+   "pTabLabel1": {
+      "message": "当前标签"
+   },
+   "pTabLabel2": {
+      "message": "快照记录"
+   },
+   "pTabLabel3": {
+      "message": "分组规则"
+   },
+   "pTabLabel4": {
+      "message": "快捷键"
+   },
+   "rAddBtn": {
+      "message": "添加规则"
+   },
+   "rCancelBtn": {
+      "message": "取消"
+   },
+   "rCloseBtn": {
+      "message": "关闭"
+   },
+   "rDelBtn": {
+      "message": "删除"
+   },
+   "rDelConfirm": {
+      "message": "删除规则 $1 ？"
+   },
+   "rEditBtn": {
+      "message": "编辑"
+   },
+   "rEnableBtn": {
+      "message": "启用"
+   },
+   "rHMethodL1": {
+      "message": "示例包含：example、www、com、www.example、example.com、www.example.com"
+   },
+   "rHMethodL2": {
+      "message": "示例前缀为：www、www.example、www.example.com"
+   },
+   "rHMethodL3": {
+      "message": "示例后缀为：com、example.com、www.example.com"
+   },
+   "rHMethodL4": {
+      "message": "完全相等：www.example.com"
+   },
+   "rHMethodL5": {
+      "message": "正则表达式匹配请参考 \u003Ca href='https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions' target='_blank'>RegExp.test()\u003C/a>。注意，不同于编程语言源代码中的字符串字面量，这里正则表达式的输入不需要对 “\\” 和引号做转义。"
+   },
+   "rHMethodP1": {
+      "message": "以 \u003Ccode>www.example.com\u003C/code> 为例"
+   },
+   "rHMethodTitle": {
+      "message": "规则的匹配方法"
+   },
+   "rHNoteL1": {
+      "message": "规则只在标签发生变化的时候进行匹配，比如打开新标签或当前页面 URL 或标题发生变化的时候。"
+   },
+   "rHNoteL2": {
+      "message": "默认情况下，规则不会去改变已经处于分组中的标签。但是如果当前标签导航到了另一个网站，您希望对它重新按规则进行分组，可以勾选 “扩展弹出页 → 分组规则 → 对已处于分组中的标签也应用规则” 选项。"
+   },
+   "rHNoteL3": {
+      "message": "浏览器有个默认行为：从分组中打开的新页面自动归属当前分组。(当规则匹配的时候)如果您希望扩展规则覆盖这个默认行为，也是勾选 “扩展弹出页 → 分组规则 → 对已处于分组中的标签也应用规则” 选项。"
+   },
+   "rHNoteL4": {
+      "message": "在浏览器多窗口环境下，如果您希望在多个窗口中同一个名称的分组只能有一个(可能会将新打开的标签移动到另一个窗口中已存在的分组里)，可以勾选 “扩展弹出页 → 分组规则 → 同名的分组在所有窗口中只允许有一个” 选项。"
+   },
+   "rHNoteTitle": {
+      "message": "注意事项"
+   },
+   "rHTargetL1": {
+      "message": "页面的完整 URL，即地址栏中的全部内容，比如\u003Cbr>\u003Ccode>https://www.example.com/path/page.html?param=abc#section\u003C/code>"
+   },
+   "rHTargetL2": {
+      "message": "完整 URL 中的域名部分，比如 \u003Ccode>www.example.com\u003C/code> ，不包括端口号。"
+   },
+   "rHTargetL3": {
+      "message": "页面标题，也就是标签上显示的文字，比如 “文章标题 - 网站名称”。"
+   },
+   "rHTargetP1": {
+      "message": "浏览器的每个标签负责显示一个页面，规则可以对页面的如下信息进行匹配："
+   },
+   "rHTargetP2": {
+      "message": "示例：将 example.com 网站的所有网页自动加入到一个分组中，只需要建一条 “域名部分 包含 example.com” 的匹配规则即可。"
+   },
+   "rHTargetTitle": {
+      "message": "规则的匹配目标"
+   },
+   "rHTitle": {
+      "message": "规则说明"
+   },
+   "rHelpBtn": {
+      "message": "帮助"
+   },
+   "rMGroupColor": {
+      "message": "分组颜色"
+   },
+   "rMGroupColorInvalid": {
+      "message": "颜色错误"
+   },
+   "rMGroupName": {
+      "message": "分组名称"
+   },
+   "rMGroupNameInvalid": {
+      "message": "请提供一个名字"
+   },
+   "rMGroupNamePH": {
+      "message": "一个尽量短的名字"
+   },
+   "rMMatchTip": {
+      "message": "您可以添加多条匹配规则。一旦匹配，标签将会被自动加入到这个分组中。"
+   },
+   "rMMatchTitle": {
+      "message": "匹配规则"
+   },
+   "rMRuleName": {
+      "message": "规则名称"
+   },
+   "rMRuleNameInvalid": {
+      "message": "请提供一个名字"
+   },
+   "rMRuleNamePH": {
+      "message": "描述你的规则"
+   },
+   "rMTitle": {
+      "message": "编辑规则"
+   },
+   "rMethodEndsWith": {
+      "message": "后缀为"
+   },
+   "rMethodEqual": {
+      "message": "完全相等"
+   },
+   "rMethodIncludes": {
+      "message": "包含"
+   },
+   "rMethodInvalid": {
+      "message": "输入错误"
+   },
+   "rMethodRegex": {
+      "message": "正则匹配"
+   },
+   "rMethodStartsWith": {
+      "message": "前缀为"
+   },
+   "rSaveBtn": {
+      "message": "保存"
+   },
+   "rTargetHostname": {
+      "message": "域名部分"
+   },
+   "rTargetHref": {
+      "message": "完整URL"
+   },
+   "rTargetInvalid": {
+      "message": "输入错误"
+   },
+   "rTargetTitle": {
+      "message": "页面标题"
+   },
+   "rTargetTitleIgnoreCase": {
+      "message": "页面标题 (忽略大小写)"
+   },
+   "rTitle": {
+      "message": "标签分组规则"
+   },
+   "rValueEmptyInvalid": {
+      "message": "请提供匹配值"
+   },
+   "rValueRegexInvalid": {
+      "message": "正则表达式错误"
+   }
+}

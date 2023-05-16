@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <title>Tab Groups</title>
+</head>
+<body class="d-none">
+  <ul id="nav-tabs" class="nav nav-tabs sticky-top px-3 pt-3" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="current-tabs-tab" data-bs-toggle="tab" data-bs-target="#current-tabs" type="button" role="tab" aria-controls="current-tabs" aria-selected="true" data-i18n="pTabLabel1"></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="saved-groups-tab" data-bs-toggle="tab" data-bs-target="#saved-groups" type="button" role="tab" aria-controls="saved-groups" aria-selected="false" data-i18n="pTabLabel2"></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="rules-tab" data-bs-toggle="tab" data-bs-target="#rules" type="button" role="tab" aria-controls="rules" aria-selected="false" data-i18n="pTabLabel3"></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="shortcuts-tab" data-bs-toggle="tab" data-bs-target="#shortcuts" type="button" role="tab" aria-controls="shortcuts" aria-selected="false" data-i18n="pTabLabel4"></button>
+    </li>
+  </ul>
+  <div class="tab-content px-3 pb-3">
+    <div class="tab-pane fade show active" id="current-tabs" role="tabpanel" aria-labelledby="current-tabs-tab">
+      <table class="table table-hover align-middle">
+        <thead>
+          <tr>
+            <th scope="col" data-i18n="pT1Head"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col" class="expand"><img id="current-collapse-all" class="pointer size-24" src="img/shrink.svg"></th>
+            <th scope="col" class="text-center"><img id="remove-all-group" class="pointer size-18 align-text-bottom" src="img/delete-24px.svg"></th>
+            <th scope="col" class="text-center"><a href="help.html" target="_blank"><img class="size-18 align-text-bottom" src="img/help_outline_black_24dp.svg"></a></th>
+          </tr>
+        </thead>
+        <tbody id="current-tab-list"></tbody>
+      </table>
+    </div>
+    <div class="tab-pane fade" id="saved-groups" role="tabpanel" aria-labelledby="saved-groups-tab">
+      <table class="table table-hover align-middle mb-1">
+        <thead>
+          <tr>
+            <th scope="col" data-i18n="pT2Head"></th>
+            <th scope="col"></th>
+            <th scope="col" class="expand"><img id="saved-collapse-all" src="img/expand_less_black.svg" class="pointer size-24"></th>
+            <th scope="col"><img id="saved-merge-all" src="img/call_merge_black.svg" class="pointer size-24"></th>
+            <th scope="col"><img data-bs-toggle="modal" data-bs-target="#delete-confirm" src="img/delete-24px.svg" class="pointer"></th>
+          </tr>
+        </thead>
+        <tbody id="saved-group-list"></tbody>
+      </table>
+      <div class="form-text my-3 very-small" id="pT2Tip" data-i18n-html="pT2Tip"></div>
+      <div class="position-relative">
+        <div>
+          <input id="saved-expand-state" type="checkbox">
+          <label for="saved-expand-state" data-i18n="pT2Expand"></label>
+        </div>
+        <div>
+          <span data-i18n="pT2Max1"></span> <input id="max-snapshots" type="number" value="5" step="1" min="1" max="20"> <span data-i18n="pT2Max2"></span>
+        </div>
+        <div class="btn-group dropup position-absolute bottom-0 end-0">
+          <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="saved-data-menu-btn" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="pT2Data"></button>
+          <input type="file" accept="application/json,.json" class="d-none">
+          <ul id="saved-data-menu" class="dropdown-menu dropdown-menu-end" aria-labelledby="saved-data-menu-btn">
+            <li><button class="dropdown-item" type="button" data-i18n="pT2Data_ImportJSON"></button></li>
+            <li><button class="dropdown-item" type="button" data-i18n="pT2Data_ExportJSON"></button></li>
+            <li><button class="dropdown-item" type="button" data-i18n="pT2Data_ExportHTML"></button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="rules" role="tabpanel" aria-labelledby="rules-tab">
+      <table class="table table-striped mb-1">
+        <thead>
+          <tr>
+            <th scope="col" data-i18n="pT3Head"></th>
+          </tr>
+        </thead>
+        <tbody id="rules-list"></tbody>
+      </table>
+      <div class="form-text my-3 very-small" data-i18n-html="pT3Tip"></div>
+      <div>
+        <div>
+          <input id="rule-scope" type="checkbox">
+          <label for="rule-scope" data-i18n="pT3Scope"></label>
+        </div>
+        <div>
+          <input id="rule-oneGroupInAll" type="checkbox">
+          <label for="rule-oneGroupInAll" data-i18n="pT3OneInAll"></label>
+        </div>
+        <div>
+          <input id="rule-groupByDomain" type="checkbox">
+          <label for="rule-groupByDomain" data-i18n="pT3GroupByDomain"></label>
+        </div>
+        <div class="mt-2">
+          <button type="button" class="btn btn-primary btn-sm" id="rule-edit" data-i18n="pT3Btn"></button>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade position-relative" id="shortcuts" role="tabpanel" aria-labelledby="shortcuts-tab">
+      <details class="my-2">
+        <summary class="fw-bold" data-i18n="pT4Summary1"></summary>
+        <table class="table table-striped align-middle">
+          <caption data-i18n="pT4Caption1"></caption>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="pT4Head1"></th>
+              <th scope="col" data-i18n="pT4Head2"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><kbd>`</kbd> / <kbd>→</kbd></th>
+              <td data-i18n="kb_next_tabpane"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>~</kbd> / <kbd>←</kbd></th>
+              <td data-i18n="kb_pre_tabpane"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>J</kbd> / <kbd>↓</kbd></th>
+              <td data-i18n="kb_next_row"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>Shift</kbd> + <kbd>J</kbd> / <kbd>↓</kbd></th>
+              <td data-i18n="kb_next_top_row"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>K</kbd> / <kbd>↑</kbd></th>
+              <td data-i18n="kb_pre_row"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>Shift</kbd> + <kbd>K</kbd> / <kbd>↑</kbd></th>
+              <td data-i18n="kb_pre_top_row"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>Enter</kbd></th>
+              <td data-i18n="kb_enter"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>O</kbd></th>
+              <td data-i18n="kb_o"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="kb-ctrl-enter"><kbd>Ctrl</kbd> + <kbd>Enter</kbd></th>
+              <td data-i18n="kb_ctrl_enter"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="kb-ctrl-o"><kbd>Ctrl</kbd> + <kbd>O</kbd></th>
+              <td data-i18n="kb_ctrl_o"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>Shift</kbd> + <kbd>Enter</kbd></th>
+              <td data-i18n="kb_shift_enter"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>Shift</kbd> + <kbd>O</kbd></th>
+              <td data-i18n="kb_shift_o"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>S</kbd></th>
+              <td data-i18n="kb_s"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>R</kbd></th>
+              <td data-i18n="kb_r"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>C</kbd> / <kbd>X</kbd></th>
+              <td data-i18n="kb_c"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>#</kbd> / <kbd>Delete</kbd></th>
+              <td data-i18n="kb_hash"></td>
+            </tr>
+            <tr>
+              <th scope="row"><kbd>Esc</kbd></th>
+              <td data-i18n="kb_esc"></td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+      <details class="mb-3">
+        <summary class="fw-bold" data-i18n="pT4Summary2"></summary>
+        <table class="table table-striped align-middle">
+          <caption data-i18n="pT4Caption2"></caption>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="pT4Head1"></th>
+              <th scope="col" data-i18n="pT4Head2"></th>
+              <th scope="col" data-i18n="pT4Head3"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="cmd-newtab-in-group"></tr>
+            <tr id="cmd-duplicate-tab"></tr>
+            <tr id="cmd-toggle-tab-pin"></tr>
+            <tr id="cmd-save-tab"></tr>
+            <tr id="cmd-save-group"></tr>
+          </tbody>
+        </table>
+        <table class="table table-striped align-middle">
+          <caption data-i18n="pT4Caption3"></caption>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="pT4Head1"></th>
+              <th scope="col" data-i18n="pT4Head2"></th>
+              <th scope="col" data-i18n="pT4Head3"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="cmd-toggle-tab-group"></tr>
+            <tr id="cmd-group-ungrouped-tabs"></tr>
+            <tr id="cmd-ungroup-this-group"></tr>
+            <tr id="cmd-ungroup-all-group"></tr>
+            <tr id="cmd-add-left-tab-in-this-group"></tr>
+            <tr id="cmd-add-right-tab-in-this-group"></tr>
+            <tr id="cmd-group-by-domain-without-name"></tr>
+            <tr id="cmd-group-by-domain-with-name"></tr>
+          </tbody>
+        </table>
+        <table class="table table-striped align-middle">
+          <caption data-i18n="pT4Caption4"></caption>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="pT4Head1"></th>
+              <th scope="col" data-i18n="pT4Head2"></th>
+              <th scope="col" data-i18n="pT4Head3"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="cmd-remove-left-tabs"></tr>
+            <tr id="cmd-remove-right-tabs"></tr>
+            <tr id="cmd-remove-other-tabs"></tr>
+            <tr id="cmd-remove-group"></tr>
+            <tr id="cmd-remove-tabs-not-in-this-group"></tr>
+            <tr id="cmd-remove-ungrouped-tabs"></tr>
+          </tbody>
+        </table>
+        <table class="table table-striped align-middle">
+          <caption data-i18n="pT4Caption5"></caption>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="pT4Head1"></th>
+              <th scope="col" data-i18n="pT4Head2"></th>
+              <th scope="col" data-i18n="pT4Head3"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="cmd-move-group-window"></tr>
+            <tr id="cmd-move-group-left"></tr>
+            <tr id="cmd-move-group-right"></tr>
+            <tr id="cmd-move-tab-left"></tr>
+            <tr id="cmd-move-tab-right"></tr>
+          </tbody>
+        </table>
+        <table class="table table-striped align-middle">
+          <caption data-i18n="pT4Caption6"></caption>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="pT4Head1"></th>
+              <th scope="col" data-i18n="pT4Head2"></th>
+              <th scope="col" data-i18n="pT4Head3"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="cmd-next-tab-in-group"></tr>
+            <tr id="cmd-previous-tab-in-group"></tr>
+            <tr id="cmd-active-group-1"></tr>
+            <tr id="cmd-active-group-2"></tr>
+            <tr id="cmd-active-group-3"></tr>
+            <tr id="cmd-active-group-4"></tr>
+            <tr id="cmd-active-group-5"></tr>
+            <tr id="cmd-active-group-6"></tr>
+            <tr id="cmd-active-group-7"></tr>
+            <tr id="cmd-active-group-8"></tr>
+            <tr id="cmd-active-group-9"></tr>
+          </tbody>
+        </table>
+        <table class="table table-striped align-middle">
+          <caption data-i18n="pT4Caption7"></caption>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="pT4Head1"></th>
+              <th scope="col" data-i18n="pT4Head2"></th>
+              <th scope="col" data-i18n="pT4Head3"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="cmd-toggle-group-collapse"></tr>
+            <tr id="cmd-collapse-group-1"></tr>
+            <tr id="cmd-collapse-group-2"></tr>
+            <tr id="cmd-collapse-group-3"></tr>
+            <tr id="cmd-collapse-group-4"></tr>
+            <tr id="cmd-collapse-group-5"></tr>
+            <tr id="cmd-collapse-group-6"></tr>
+            <tr id="cmd-collapse-group-7"></tr>
+            <tr id="cmd-collapse-group-8"></tr>
+            <tr id="cmd-collapse-group-9"></tr>
+            <tr id="cmd-toggle-all-group-collapse"></tr>
+          </tbody>
+        </table>
+      </details>
+      <div>
+        <input id="require-notification" type="checkbox">
+        <label for="require-notification" data-i18n="pT4NotifyPermission"></label>
+      </div>
+      <div class="d-flex align-items-center mt-2">
+        <button type="button" class="btn btn-primary btn-sm" id="shortcut-edit" data-i18n="pT4Btn"></button>
+        <a href="https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad" target="_blank" class="ms-auto"><span data-i18n="pT4CrKS"></span><img src="img/open_in_new.svg" class="size-16 ms-1"></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container" class="position-fixed bottom-0 start-50 translate-middle-x p-3">
+    <div id="successTip" class="toast hide w-auto" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body bg-success text-white fw-bold rounded"></div>
+    </div>
+  </div>
+
+  <div id="delete-confirm" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5 class="modal-title" data-i18n="pT2DeleteAll"></h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal" data-i18n="rCancelBtn"></button>
+          <button id="saved-delete-all" type="button" class="btn btn-danger btn-sm" data-i18n="rDelBtn"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="saved-editor" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form>
+            <div class="mb-1">
+              <label for="saved-edit-title" class="col-form-label col-form-label-sm" data-i18n="pT2EditTitle"></label>
+              <input type="text" class="form-control" id="saved-edit-title">
+              <div class="invalid-feedback" data-i18n="pT2EditTitleInvalid"></div>
+            </div>
+            <div>
+              <label for="saved-edit-url" class="col-form-label col-form-label-sm" data-i18n="pT2EditURL"></label>
+              <input type="text" class="form-control" id="saved-edit-url">
+              <div class="invalid-feedback" data-i18n="pT2EditURLInvalid"></div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal" data-i18n="rCancelBtn"></button>
+          <button id="saved-edit-save" type="button" class="btn btn-primary btn-sm" data-i18n="rSaveBtn"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul id="dropdown-move-to" class="dropdown-menu">
+    <li><h6 class="dropdown-header" data-i18n="pMoveItem1"></h6></li>
+    <li><button class="dropdown-item text-truncate" type="button" data-i18n="pMoveItem2"></button></li>
+    <li class="d-none"><hr class="dropdown-divider"></li>
+    <li class="d-none"><h6 class="dropdown-header" data-i18n="pMoveItem3"></h6></li>
+  </ul>
+
+  <ul id="dropdown-add-to" class="dropdown-menu">
+    <li><h6 class="dropdown-header" data-i18n="pAddHead"></h6></li>
+    <li><div class="dropdown-header"><button type="button" class="btn btn-primary btn-sm" data-i18n="pAddBtn"></button></div></li>
+  </ul>
+
+  <template id="no-saved-groups">
+    <tr><td colspan="5" class="text-center text-muted" data-i18n="pT2NoRecord"></td></tr>
+  </template>
+  <template id="no-rules">
+    <tr><td class="text-center text-muted shadow-none" data-i18n="pT3NoRecord"></td></tr>
+  </template>
+
+
+  <script type="text/javascript" src="jslib/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/group-store.js"></script>
+  <script type="text/javascript" src="js/rule-store.js"></script>
+  <script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>
