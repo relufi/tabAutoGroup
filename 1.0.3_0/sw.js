@@ -83,15 +83,14 @@ function domainToName(hostname) {
 }
 function matchDomainRule(a) {
   a = new URL(a);
-  if (RuleForNoGroup) {
-    if (
+  if (
       (a.protocol === "edge:" || a.protocol === "chrome:") &&
       a.hostname === "newtab"
-    ) {
+  ) {
+    if (RuleForNoGroup) {
       return null;
     }
-  }
-  if(a.protocol === "file:") {
+  }else if(a.protocol !== "http:" && a.protocol !== "https:"){
     return { groupName: a.protocol.slice(0,a.protocol.length - 1) };
   }
   return { groupName: domainToName(a.hostname) };
