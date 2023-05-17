@@ -91,6 +91,9 @@ function matchDomainRule(a) {
       return null;
     }
   }
+  if(a.protocol === "file:") {
+    return { groupName: a.protocol.slice(0,a.protocol.length - 1) };
+  }
   return { groupName: domainToName(a.hostname) };
 }
 const NoGroup = chrome.tabGroups.TAB_GROUP_ID_NONE,

@@ -161,13 +161,11 @@
       "16": "icon/16.png",
       "48": "icon/48.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqnPBEXRUOsNnHmd2X6jxlb7iSgmP2rASWM8/Rvy3SniOhnh48+p2O/DlYJZyLpIcqdzjR5LfNOmmcQbgc2x0zxY2A0XkK/IGCW6sA5qdM3UmWN/riHMeB0juyL2FEGY01dKD9k+fpqgB1Oj531PjZ0hOKlAAzediyDhHwmXUmHT/6+gTGm7UHQ8vCpzhL/mf75VpFsnUgunz04eAubqWuDqorqrI517eVHUOoP+6N4rDinlQNvvii/Lx05fnWy/BOtINJqtCtYsf34h1+leR3h09lv04737ZR45bxJIrXH4l9uQvJt4fft028td7XXvmcksEmr5yvUDw7bU5YoCJawIDAQAB",
    "manifest_version": 3,
    "minimum_chrome_version": "104",
    "name": "__MSG_extName__",
    "offline_enabled": true,
    "optional_permissions": [ "notifications" ],
    "permissions": [ "favicon", "storage", "unlimitedStorage", "tabs", "tabGroups", "alarms" ],
-   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
-   "version": "1.0.3"
+   "version": "1.0.4"
 }

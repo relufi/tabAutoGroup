@@ -390,7 +390,7 @@
       "message": "已禁用"
    },
    "pT3GroupByDomain": {
-      "message": "自动按域名分组(这会禁用所有其它规则)"
+      "message": "自动按域名分组"
    },
    "pT3Head": {
       "message": "当前自动分组规则"

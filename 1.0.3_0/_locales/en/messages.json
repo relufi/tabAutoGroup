@@ -390,7 +390,7 @@
       "message": "Disabled"
    },
    "pT3GroupByDomain": {
-      "message": "Automatically group by domain name (it will disable all other rules)"
+      "message": "Automatically group by domain name"
    },
    "pT3Head": {
       "message": "Current Group Rules"
